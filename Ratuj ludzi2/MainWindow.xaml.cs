@@ -20,9 +20,20 @@ namespace Ratuj_ludzi2
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random random = new Random();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void startBbutton_Click(object sender, RoutedEventArgs e)
+        {
+            AddEnemy();
+        }
+
+        private void AddEnemy()
+        {
+            ContentControl enemy = new ContentControl();
         }
     }
 }
